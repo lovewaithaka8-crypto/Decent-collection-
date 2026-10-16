@@ -1,0 +1,6 @@
+{
+  "name": "Decent Collection",
+  "description": "Premium Men's Fashion & Footwear storefront and manager admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

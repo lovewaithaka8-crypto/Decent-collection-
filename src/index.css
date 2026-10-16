@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F0E68C 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.sleek-bg {
+  background-image: radial-gradient(circle at 50% -20%, #222222 0%, #111111 70%);
+}
+
+.sleek-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.sleek-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sleek-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.08);
+}
+
+.sleek-nav-item {
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.sleek-nav-item.active {
+  color: #D4AF37;
+  background: rgba(212, 175, 55, 0.05);
+  border-left-color: #D4AF37;
+}
+
+.status-pill-packing {
+  background: rgba(212, 175, 55, 0.1);
+  color: #D4AF37;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.status-pill-completed {
+  background: rgba(0, 255, 100, 0.1);
+  color: #00FF64;
+  border: 1px solid rgba(0, 255, 100, 0.2);
+}
+
+.gold-btn {
+  background: #D4AF37;
+  color: #111111;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.gold-btn:hover {
+  background: #c39e2d;
+  transform: translateY(-1px);
+}
+
+.gold-outline-btn {
+  background: transparent;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.gold-outline-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+/* ==========================================
+   🖨 PROFESSIONAL PRINT MEDIA STYLES
+   ========================================== */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  .no-print, nav, header, footer, button, .no-print * {
+    display: none !important;
+  }
+
+  #printable-document, #printable-receipt {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    border-radius: 0 !important;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  th, td {
+    border: 1px solid #d1d5db !important;
+    color: #111827 !important;
+  }
+
+  @page {
+    margin: 15mm;
+    size: A4 portrait;
+  }
+}
+
+
